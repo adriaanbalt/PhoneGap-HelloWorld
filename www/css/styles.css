@@ -1,0 +1,119 @@
+/* ============================== */
+/* ! Layout for desktop version   */
+/* ============================== */
+
+	html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, abbr, address, cite, code, del, dfn, em, img, ins, kbd, q, samp, small, strong, sub, sup, var, b, i, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary, time, mark, audio, video { margin:0; padding:0; border:0; outline:0; font-size:100%; vertical-align:baseline; background:transparent; } article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section { display:block; } nav ul { list-style:none; } blockquote, q { quotes:none; } blockquote:before, blockquote:after, q:before, q:after { content:''; content:none; } a { margin:0; padding:0; font-size:100%; vertical-align:baseline; background:transparent; } ins { background-color:#ff9; color:#000; text-decoration:none; } mark { background-color:#ff9; color:#000; font-style:italic; font-weight:bold; } del { text-decoration: line-through; } abbr[title], dfn[title] { border-bottom:1px dotted; cursor:help; } table { border-collapse:collapse; border-spacing:0; } hr { display:block; height:1px; border:0; border-top:1px solid #ccc; margin:1em 0; padding:0; } input, select { vertical-align:middle; }
+
+	.clearfix:before, .clearfix:after { content: "\0020"; display: block; height: 0; overflow: hidden; }
+	.clearfix:after { clear: both; }
+	.clearfix { zoom: 1; }
+
+	body {
+		background: #181818;
+		color: #fff;
+		font-family: 'Josefin Sans';
+	}
+
+	#wrapper {
+		position: relative;
+		max-width: 880px;
+		text-align: center;
+		margin: 0 auto;
+	}
+
+	header {
+		padding: 100px 0px 50px 0px;
+	}
+
+	a{ 
+		color: #fff;
+		text-decoration: none;
+	}
+	a:hover p{
+		text-decoration: underline;
+	}
+	a:hover p.last{
+		text-decoration: none;
+	}
+
+	.info p {
+		padding: 0px 0px 5px 0px;
+	}
+	.info p.last {
+		padding: 15px 0px 5px 0px;
+	}
+	.info .tel {
+		cursor: default;
+	}
+	
+	footer {
+		padding: 200px 0px 20px 0px;
+		
+	}
+	a.stamp {
+		position: relative;
+		width: 97px;
+		height: 97px;
+	}
+
+	footer {
+		position: relative;
+		margin-top: 20px;
+		bottom: 10px;
+		right: 0;
+	}
+
+	footer p {
+		float:left;
+		margin-left: 10px;
+	}
+
+	ul, ul li, ol, ol li {
+		list-style-type: none;
+	}
+
+	@font-face {
+		font-family: 'Josefin Sans';
+		font-style: normal;
+		font-weight: 400;
+		src: local('Josefin Sans'), local('JosefinSans'), url('http://themes.googleusercontent.com/static/fonts/josefinsans/v3/xgzbb53t8j-Mo-vYa23n5qRDOzjiPcYnFooOUGCOsRk.woff') format('woff');
+	}
+	@font-face {
+		font-family: 'Passion One';
+		font-style: normal;
+		font-weight: 400;
+		src: local('Passion One'), local('PassionOne-Regular'), url('http://themes.googleusercontent.com/static/fonts/passionone/v3/fY6k21F1QT2c_Oc3HRNDwrrIa-7acMAeDBVuclsi6Gc.woff') format('woff');
+	}
+	@font-face {
+		font-family: 'Six Caps';
+		font-style: normal;
+		font-weight: normal;
+		src: local('Six Caps'), local('SixCaps'), url('http://themes.googleusercontent.com/static/fonts/sixcaps/v4/tMrhQDUBAHnnGuM33-yobHYhjbSpvc47ee6xR_80Hnw.woff') format('woff');
+	}
+
+/* ============================= */
+/* ! Layout for mobile version   */
+/* ============================= */
+
+@media handheld, only screen and (max-width: 350px) {
+	header {
+		padding: 30px 0px 30px 0px;
+	}
+	footer {
+		padding: 30px 0px 10px 0px;
+	}
+}
+
+
+/* ========================================== */
+/* ! Provide higher res assets for iPhone 4   */
+/* ========================================== */
+
+@media only screen and (-webkit-min-device-pixel-ratio: 2) { 
+
+/*	.logo {
+		background: url(logo2x.jpg) no-repeat;
+		background-size: 212px 303px;
+	}*/
+
+}
